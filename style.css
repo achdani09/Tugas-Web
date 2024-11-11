@@ -52,4 +52,8 @@ button:hover {
     background-color: rgb(241, 12, 12);
 }
 
-
+#form-status {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+}
