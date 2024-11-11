@@ -21,6 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         http_response_code(500);
         echo 'terjadi kesalahan. pesan tidak dapat dikirim.';
     }
-
-} 
+}  else {
+    http_response_code(405);
+    echo 'metode tidak di izinkan.';
+}
 ?>
