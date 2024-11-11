@@ -14,6 +14,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $subject = 'pesann kontak baru dari ' .$name;
     $body = "nama: $name\nemail: $email\npesan:\n$message";
     $headers ="from: $email";
-    
+
+    if (mail($to, $subject, $body, $headers)){
+        echo 'pesan berhasil dikirim.';
+    } else {
+        http_response_code(500);
+        echo 'terjadi kesalahan. pesan tidak dapat dikirim.';
+    }
+
 } 
 ?>
