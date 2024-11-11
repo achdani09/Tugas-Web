@@ -9,5 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         echo 'data tidak valid.';
         exit;
     }
+
+    $to = 'danidavenoza@gmail.com';
+    $subject = 'pesann kontak baru dari ' .$name;
+    $body = "nama: $name\nemail: $email\npesan:\n$message";
+    $headers ="from: $email";
+    
 } 
 ?>
