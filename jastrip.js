@@ -11,4 +11,10 @@ document.getElementById('contact-form').addEventListener('submit', async functio
         body: formData
     });
     
+    if (response.ok) {
+        document.getElementById('contact-form-section').style.display ='none';
+        document.getElementById('success-messag-section').style.display ='block';
+    } else {
+        formstatus.innerText = 'terjadi keslahan. silakan coba lagi.';
+    }
 })
