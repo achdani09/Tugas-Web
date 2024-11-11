@@ -13,7 +13,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     
     if (response.ok) {
         document.getElementById('contact-form-section').style.display ='none';
-        document.getElementById('success-messag-section').style.display ='block';
+        document.getElementById('success-message-section').style.display ='block';
     } else {
         formstatus.innerText = 'terjadi keslahan. silakan coba lagi.';
     }
