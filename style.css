@@ -41,10 +41,15 @@ button {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: rgb(59, 48, 185);
+    background-color: rgb(18, 54, 232);
     color: white;
     border: none;
     cursor: pointer;
     margin-top: 15px;
 }
+
+button:hover {
+    background-color: rgb(241, 12, 12);
+}
+
 
