@@ -21,7 +21,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
 function resetForm() {
     document.getElementById('contact-form-section').style.display ='block';
-    document.getElementById('succsess-message-section').style.display ='none';
+    document.getElementById('success-message-section').style.display ='none';
     document.getElementById('contact-form').reset();
     document.getElementById('form-status').innerText = '';
 }
