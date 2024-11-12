@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $message = trim($_post['message']);
 
     if (empty($name) || empty($email) ||empty($message) ||!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        http_response_code(400);
+        http_response_code(405);
         echo 'data tidak valid.';
         exit;
     }

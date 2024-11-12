@@ -1,13 +1,13 @@
 document.getElementById('contact-form').addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    const formstatus = document.getElementById('form-status');
-    formstatus.innerText = 'mengirim...';
+    const formStatus = document.getElementById('form-status');
+    formStatus.innerText = 'mengirim...';
 
-    const formData = new formData(this);
+    const formData = new FormData(this);
 
-    const response = await fetch('fast.php',{
-        method: 'post',
+    const response = await fetch ('fast.php', {
+        method: 'POST',
         body: formData
     });
     
@@ -15,7 +15,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
         document.getElementById('contact-form-section').style.display ='none';
         document.getElementById('success-message-section').style.display ='block';
     } else {
-        formstatus.innerText = 'terjadi keslahan. silakan coba lagi.';
+        formStatus.innerText = 'terjadi keslahan. silakan coba lagi.';
     }
 });
 
